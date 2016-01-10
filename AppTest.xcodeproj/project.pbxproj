@@ -13,9 +13,13 @@
 		81E49EB71C41E0D80064D8A5 /* AppTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 81E49EB51C41E0D80064D8A5 /* AppTest.xcdatamodeld */; };
 		81E49EB91C41E0D80064D8A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E49EB81C41E0D80064D8A5 /* Assets.xcassets */; };
 		81E49EBC1C41E0D80064D8A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E49EBA1C41E0D80064D8A5 /* LaunchScreen.storyboard */; };
+		81E49EC41C41E58E0064D8A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81E49EC31C41E58E0064D8A5 /* GoogleService-Info.plist */; };
+		ECE417F840D9D40488BD2ACA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E89A9987A974090E9C668B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F4DA542C3532DADE6033BBA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		56E89A9987A974090E9C668B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E49EAB1C41E0D80064D8A5 /* AppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E49EAE1C41E0D80064D8A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81E49EB01C41E0D80064D8A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,9 @@
 		81E49EB81C41E0D80064D8A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81E49EBB1C41E0D80064D8A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81E49EBD1C41E0D80064D8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81E49EC31C41E58E0064D8A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		81E49EC51C41E7350064D8A5 /* AppTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		DDDC0111DD37114F081AA297 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +38,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE417F840D9D40488BD2ACA /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A99705C2313B43394B5C150 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F4DA542C3532DADE6033BBA /* Pods.debug.xcconfig */,
+				DDDC0111DD37114F081AA297 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		81E49EA21C41E0D80064D8A5 = {
 			isa = PBXGroup;
 			children = (
 				81E49EAD1C41E0D80064D8A5 /* AppTest */,
 				81E49EAC1C41E0D80064D8A5 /* Products */,
+				4A99705C2313B43394B5C150 /* Pods */,
+				8F76297B86BCF04DE2AE7FCF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,9 +81,19 @@
 				81E49EB81C41E0D80064D8A5 /* Assets.xcassets */,
 				81E49EBA1C41E0D80064D8A5 /* LaunchScreen.storyboard */,
 				81E49EBD1C41E0D80064D8A5 /* Info.plist */,
+				81E49EC31C41E58E0064D8A5 /* GoogleService-Info.plist */,
 				81E49EB51C41E0D80064D8A5 /* AppTest.xcdatamodeld */,
+				81E49EC51C41E7350064D8A5 /* AppTest-Bridging-Header.h */,
 			);
 			path = AppTest;
+			sourceTree = "<group>";
+		};
+		8F76297B86BCF04DE2AE7FCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56E89A9987A974090E9C668B /* libPods.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81E49EC01C41E0D80064D8A5 /* Build configuration list for PBXNativeTarget "AppTest" */;
 			buildPhases = (
+				6D0F2794C6BA20F93D0F00F0 /* Check Pods Manifest.lock */,
 				81E49EA71C41E0D80064D8A5 /* Sources */,
 				81E49EA81C41E0D80064D8A5 /* Frameworks */,
 				81E49EA91C41E0D80064D8A5 /* Resources */,
+				42AA8501DA1A9223BF698258 /* Embed Pods Frameworks */,
+				2CF684AF79A42759DCA471DC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,12 +159,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				81E49EBC1C41E0D80064D8A5 /* LaunchScreen.storyboard in Resources */,
+				81E49EC41C41E58E0064D8A5 /* GoogleService-Info.plist in Resources */,
 				81E49EB91C41E0D80064D8A5 /* Assets.xcassets in Resources */,
 				81E49EB41C41E0D80064D8A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CF684AF79A42759DCA471DC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42AA8501DA1A9223BF698258 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D0F2794C6BA20F93D0F00F0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		81E49EA71C41E0D80064D8A5 /* Sources */ = {
@@ -252,23 +333,30 @@
 		};
 		81E49EC11C41E0D80064D8A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F4DA542C3532DADE6033BBA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = AppTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Trenx.AppTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Trenx.AppTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppTest/AppTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		81E49EC21C41E0D80064D8A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDDC0111DD37114F081AA297 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = AppTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Trenx.AppTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Trenx.AppTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppTest/AppTest-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -291,6 +379,7 @@
 				81E49EC21C41E0D80064D8A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
